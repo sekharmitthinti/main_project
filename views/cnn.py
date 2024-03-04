@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing import image
 from keras.preprocessing.image import img_to_array
 model = load_model('models/keras_model.h5')
 
-model1=load_model('models/lung_image_prediction_model.keras')
+model1=load_model('/lung_image_prediction_model.keras')
 
 
 def load_view():
