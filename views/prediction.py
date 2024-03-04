@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-import sklearn
+# import sklearn
 
 cancer_model = pickle.load(open('models/final_model.sav', 'rb'))
     
