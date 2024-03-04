@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import sklearn
 import cv2
 from PIL import Image, ImageOps
 from tempfile import NamedTemporaryFile
