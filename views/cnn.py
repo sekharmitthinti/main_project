@@ -6,7 +6,10 @@ import tensorflow
 from tempfile import NamedTemporaryFile
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-from keras.preprocessing.image import img_to_array
+# from keras.preprocessing.image import img_to_array
+from tensorflow.keras.utils import img_to_array
+
+
 model = load_model('models/keras_model.h5')
 
 model1=load_model('lung_image_prediction_model.keras')
