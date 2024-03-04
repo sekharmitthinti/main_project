@@ -1,11 +1,11 @@
 # import base64
-import requirements
+
 import pickle
 import streamlit as st
 import base64
 import utils as utl
 from views import introduction,about,prediction,cnn
-import sklearn 
+
 
 st.set_page_config(page_title='Lung Cancer Detection')
 #Loading models
