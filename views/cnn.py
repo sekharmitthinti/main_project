@@ -45,12 +45,17 @@ def load_view():
         img_array /= 255.  # Normalize pixel values to [0, 1]
 
         # Predict the class of the image
+        # prediction = model1.predict(img_array)
+        # if prediction < 0.5:
+        #     return 'lung'
+        # else:
+        #     return 'non-lung'
         prediction = model1.predict(img_array)
-        if prediction < 0.5:
+        probability_of_lung = prediction[0]
+        if probability_of_lung < 0.5:
             return 'lung'
         else:
             return 'non-lung'
-        
 
     cnn = loading_model()
     st.write("""# Lung Cancer Detection using CNN and CT-Scan Images""")
