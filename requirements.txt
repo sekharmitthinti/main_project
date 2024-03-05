@@ -4,7 +4,7 @@ streamlit==1.18.0
 pandas==1.4.2
 scikit-learn==1.2.0
 streamlit-option-menu==0.3.2
-tensorflow
+tensorflow==2.15.0
 seaborn
 pyparsing
-# protobuf==3.19.6
+protobuf==3.20.0
